@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Interactivo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #0f0f0f;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffff;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .home-content {
+      max-width: 500px;
+    }
+    .home-content h1 span {
+      color: #00ffff;
+    }
+    .home-content .buttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hire-btn {
+      background-color: #00ffff;
+      color: black;
+    }
+    .contact-btn {
+      background-color: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+    }
+    .home img {
+      border-radius: 50%;
+      border: 5px solid #00ffff;
+      max-width: 300px;
+    }
+    .education, .curiosities, .contact {
+      text-align: center;
+    }
+    .curiosities-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .curiosity {
+      background-color: #00ffff;
+      color: black;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    #contact-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      margin-top: 1rem;
+    }
+    button.submit-comment {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong style="color: white;">Anderson</strong><strong style="color: #00ffff;"> Chaves</strong></div>
+    <nav>
+      <a href="#home">Inicio</a>
+      <a href="#education">Education</a>
+      <a href="#curiosities">Datos Curiosos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hola soy <span>Anderson Said Chaves Cordero</span></h1>
+      <h2>Soy estudiante de la udi de ingeneria de sistemas</h2>
+      <p>Tengo 19 años, naci el 12 de septiembre de 2005 en bucaramanga, soy una persona que le gusta estar tranquilo, mi color favorito es el negro, como pasatiempo me gusta entrenar o jugar con mi hermano marcos de 18años ¿Te gustaria saber mas sobre mi?  </p>
+      <div class="buttons">
+        <button class="hire-btn">Hire</button>
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+    <img src="C:\Users\VAKY\Downloads\nose xd\fotomia.jpg" alt="Profile Image" />
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p>Estudie en bucaramanga hasta 4to de primaria  en un colegio para niños de primaria y transicion llamado la casita de malena el cual ahora mismo no se encuentra disponible, luego de eso estudie en el colegio Colegio del Sagrado Corazón de Jesús - Bethlemitas Barrancabermermeja y ahi logre graduarme hacer muchos amigos nunca llegue a firmar observador aunque me gustara ver como mis amigos hacian locuras, ahora ando estudiando en la universidad de investigacion y Desarrollo(udi) ingeneria de sistemas </p>
+  </section>
+
+  <section id="curiosities" class="curiosities">
+    <h2>Datos Curiosos</h2>
+    <div class="curiosities-container">
+      <div class="curiosity">
+        <h3>Dato #1</h3>
+        <p>Soy cinturon negro en taekwondo, mi primera vez entrenando fue en 2018(actualmente no lo entreno porque no me da el tiempo)</p>
+      </div>
+      <div class="curiosity">
+        <h3>Dato #2</h3>
+        <p>Llegue al rango de hierro4 en league of legends es el rango mas bajo el cual solo el 3% de los jugadores tienen</p>
+      </div>
+      <div class="curiosity">
+        <h3>Dato #3</h3>
+        <p>Mi lema de vida es: "Haz lo imposible, ve lo invisible, toca lo intocable, rompe lo irrompible."</p>
+      </div>
+      <div class="curiosity">
+        <h3>Dato #4</h3>
+        <p>Me suele gustar mucho el anime, mi comida favorita son las hamburguesas y me gusta cualquier tipo de musica pero sobre todo el rock.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contacto</h2>
+    <div id="contact-icons">
+      <a href="https://www.facebook.com/vakypandi6/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+      <a href="https://wa.me/qr/BR5RAP5QDO7HD1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div id="comments">
+      <label for="comment">Deja tu comentario:</label>
+      <textarea id="comment" rows="4" placeholder="Escribe algo bonito..."></textarea>
+    </div>
+  </section>
+</body>
+</html>
